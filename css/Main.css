@@ -1,0 +1,629 @@
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.button-shop-now {
+  position: absolute;
+
+}
+
+.button-slide-2 {
+  position: absolute;
+  top: 10px;
+}
+
+.button-slide-3 {
+  position: absolute;
+  top: 10px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  border: solid 2px;
+  border-color: #636a6a;
+  border-radius: 100%;
+  margin-top: -22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 6%;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 6%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #bbb;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.content-slideshow-1 {
+  position: absolute;
+  top: 270px;
+  left: 380px;
+}
+
+.content-slideshow-1 .content {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  color: rgb(35, 35, 35);
+}
+
+.content-slideshow-1 .content .title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.content-slideshow-1 .content hr {
+  width: 15%;
+  height: 2px;
+  background-color: black;
+  border: none;
+}
+
+.content-slideshow-1 .content .detail {
+  font-size: 12px;
+  line-height: 1.833;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+.button-shop-now {
+  background-color: #232323;
+  width: 194px;
+  height: 45px;
+  margin-top: 20px;
+  margin-left: 25%;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-shop-now p {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: auto;
+}
+
+.button-shop-now:hover {
+  background-color: #b8b8b8;
+  color: #232323;
+  cursor: pointer;
+}
+
+.sub-banners .sub-banner1,
+.sub-banner2,
+.sub-banner3 {
+  background-size: cover;
+  cursor: pointer;
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sub-banners .sub-banner1 {
+  background-image: url('../pictures/sub-banner1.jpg');
+
+}
+
+.sub-banners .sub-banner2 {
+  background-image: url('../pictures/sub-banner2.jpg');
+}
+
+.sub-banners .sub-banner3 {
+  background-image: url('../pictures/sub-banner3.jpg');
+}
+
+.sub-banners {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sub-banners a {
+  font-size: 16px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.text-content::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width .3s;
+  margin-top: 5px;
+}
+
+.sub-banner2:hover .text-content::after,
+.sub-banner1:hover .text-content::after,
+.sub-banner3:hover .text-content::after {
+  width: 100%;
+}
+
+.text-new-arrivals-view-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.divider {
+  width: 20%;
+  color: black;
+  border: none;
+  background-color: black;
+  margin: 11px 0;
+}
+
+.text-new-arrivals {
+  font-size: 20px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 8%;
+}
+
+.text-new-arrivals p {
+  margin: 0;
+}
+
+.view-all {
+  font-size: 12px;
+  font-family: "Poppins";
+  color: inherit;
+  line-height: 1.2;
+}
+
+.list_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_clothes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 35px 0;
+  height: 500px;
+  flex-wrap: wrap;
+}
+
+.product_clothes .clothes {
+  width: 270px;
+  height: 360px;
+
+}
+
+.product_clothes .clothes .image-clothes {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.product_clothes .clothes .image-clothes .icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.product_clothes .infor_clothes p {
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Poppins";
+  color: rgb(35, 35, 35);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.product_clothes .infor_clothes .detail {
+  font-size: 12px;
+  font-family: "Poppins";
+  color: rgb(150, 150, 150);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.product_clothes .infor_clothes .price {
+  font-size: 14px;
+  font-family: "Poppins";
+  color: rgb(35, 35, 35);
+  font-weight: bold;
+  line-height: 1.786;
+  text-align: center;
+}
+
+.product_clothes .infor_clothes .color {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  font-family: "Poppins";
+  color: rgb(35, 35, 35);
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: bold;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  cursor: pointer;
+  bottom: -100%;
+  transition: bottom 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-clothes:hover .add-cart {
+  bottom: 0;
+}
+
+.add-cart:hover {
+  color: #fafafa;
+  background-color: #232323;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+.show-more {
+  border: solid 1px;
+  width: 300px;
+  height: 45px;
+  border-color: #b8b8b8;
+  font-size: 14px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  color: rgb(35, 35, 35);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.show-more p {
+  font-weight: 700;
+}
+
+.show-more:hover {
+  background-color: #232323;
+  color: #b8b8b8;
+  cursor: pointer;
+}
+
+.on-instagram {
+  width: 100%;
+  margin-top: 70px;
+  background-color: #fafafa;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.on-instagram .text-content-instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Poppins";
+  color: rgb(60, 60, 60);
+  line-height: 1.5;
+  gap: 25px;
+
+}
+
+.on-instagram .text-content-instagram p {
+  margin: 0;
+}
+
+
+.on-instagram .text-content-instagram .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.image-instagram {
+  position: relative;
+}
+
+.image-instagram p {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.arrow-left,
+.arrow-right {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border: solid 1px;
+  border-color: #b8b8b8;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.arrow-left {
+  left: -15px;
+}
+
+.arrow-right {
+  right: -15px;
+}
+
+.on-instagram .text-content-instagram .title p {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Poppins";
+  color: rgb(35, 35, 35);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.on-instagram .image-instagram {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.view-gallery {
+  margin-top: 30px;
+  border: solid 1px;
+  width: 230px;
+  height: 45px;
+  background-color: #232323;
+  font-size: 14px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+  color: #b8b8b8;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 1700px){
+  .content-slideshow-1 {
+    left: 25%;
+    top: 20%;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .image-instagram {
+    width: 90%;
+  }
+
+  .image-instagram img {
+    width: 18%;
+  }
+
+  .product_clothes {
+    height: auto;
+  }
+
+  .product_clothes .clothes {
+    margin-top: 10%;
+    margin-bottom: 7%;
+  }
+
+  .show-more {
+    margin-top: 15%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .content-slideshow-1 {
+    left: 25%;
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .product_clothes .clothes {
+    margin-bottom: 7%;
+  }
+
+  .sub-banners {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-slideshow-1 {
+    top: 10%;
+    left: 20%;
+
+  }
+
+  .slideshow-container .mySlides,
+  .mySlides img {
+    height: 420px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .slideshow-container .mySlides,
+  .mySlides img {
+    height: 320px;
+  }
+
+  .content-slideshow-1 {
+    top: 10%;
+    left: 7%;
+    
+  }
+
+  .content-slideshow-1 .content{
+    width: 90%;
+    word-wrap: break-word;
+  }
+
+  .prev, .next{
+    width: 30px;
+    height: 30px;
+  }
+
+  .prev img, .next img{
+     width: 10px;
+  }
+
+  .content-slideshow-1 .content .title {
+    font-size: 15px;
+  }
+
+  .button-shop-now {
+     width: 20%;
+     font-size: 10px;
+     margin-left: 36%;
+  }
+
+  .product_clothes {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 150px;
+    margin-bottom: 200px;
+  }
+
+  .list_product {
+    height: fit-content;
+  }
+}
